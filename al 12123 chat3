@@ -1,0 +1,56 @@
+{
+  "VirtualMachineSetup": {
+    "Purpose": "Setting up a virtual machine in VirtualBox for SD card preparation for Raspberry Pi with Arch Linux ARM",
+    "Steps": [
+      {
+        "Step": "Verify Ubuntu ISO File",
+        "Action": "Ensure the downloaded Ubuntu ISO file is complete and not corrupted."
+      },
+      {
+        "Step": "Mount ISO in VirtualBox",
+        "Action": "Open VirtualBox, go to VM settings, navigate to Storage, and mount the Ubuntu ISO under Controller: IDE."
+      },
+      {
+        "Step": "Update VirtualBox",
+        "Action": "Ensure you are using the latest version of VirtualBox."
+      },
+      {
+        "Step": "Boot VM with ISO",
+        "Action": "Use the VirtualBox boot manager to select the ISO during VM startup."
+      },
+      {
+        "Step": "Try Different ISO",
+        "Action": "If issues persist, try a different Linux distribution ISO."
+      },
+      {
+        "Step": "Check System Compatibility",
+        "Action": "Ensure the macOS system is compatible with VirtualBox and virtualization is enabled."
+      }
+    ]
+  },
+  "SDCardPreparation": {
+    "Purpose": "Preparing an SD card for Raspberry Pi using a Linux VM",
+    "Steps": [
+      {
+        "Step": "Format SD Card",
+        "Action": "In the Linux VM, format the SD card with a FAT32 partition for boot and an ext4 partition for the root filesystem."
+      },
+      {
+        "Step": "Extract Arch Linux ARM",
+        "Action": "Extract the Arch Linux ARM tarball to the appropriate partitions on the SD card."
+      },
+      {
+        "Step": "Enable SSH and Wi-Fi",
+        "Action": "Create an 'ssh' file in the boot partition and set up 'wpa_supplicant.conf' for Wi-Fi."
+      },
+      {
+        "Step": "Finalize and Boot Raspberry Pi",
+        "Action": "Eject the SD card from the Mac, insert it into the Raspberry Pi, and power it up."
+      },
+      {
+        "Step": "Access Raspberry Pi via SSH",
+        "Action": "Find the Raspberry Pi's IP address and SSH into it."
+      }
+    ]
+  }
+}
