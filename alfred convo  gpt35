@@ -1,0 +1,23 @@
+{
+    "Raspberry_Pi_Setup": {
+        "Steps": [
+            "Flash Arch Linux to SD card using dd command.",
+            "Eject SD card and insert it into Raspberry Pi.",
+            "Power on Raspberry Pi and connect it to the network via Ethernet.",
+            "Determine the Raspberry Pi's IP address from your router.",
+            "SSH into the Raspberry Pi from MacBook Air using its IP address."
+        ]
+    },
+    "Alternative_Setup_Options": {
+        "Options": [
+            "Use a TV and HDMI cable for initial setup if available.",
+            "Pair Bluetooth keyboard and mouse with Raspberry Pi if necessary."
+        ]
+    },
+    "File_Creation_for_Headless_Setup": {
+        "Steps": [
+            "Create an empty 'ssh' file in the 'boot' partition of the SD card to enable SSH.",
+            "Create 'wpa_supplicant.conf' file with Wi-Fi configuration for your network."
+        ]
+    }
+}
